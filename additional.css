@@ -1,0 +1,50 @@
+/*Display external links in mobile layout*/
+.layout-mobile .itemExternalLinks {
+    display: block !important;
+}
+
+/*Replace "Latest Movies" text with Custom Text such as "Recently Added Movies"*/
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > h2 {display: none;}
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > span {display: none;}
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a:after {
+content: 'Recently Added Movies ›';
+font-size: 24px;
+font-weight: normal;
+}
+
+/*Replace Latest TV Shows text with Custom Text such as "Recently Added TV Shows"*/
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > h2 {display: none;}
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > span {display: none;}
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a:after {
+content: 'Recently Added TV Shows ›';
+font-size: 24px;
+font-weight: normal;
+}
+
+/*Black Background Color*/
+.backgroundContainer
+{
+    background-color: #020202;
+}
+
+.raised.homeLibraryButton {
+    background: rgba(32, 32, 32, 1.0) !important;
+}
+
+/* Indicators */
+.countIndicator {
+  background: rgba(0,0,0,0.8);
+  box-shadow: none;
+}
+
+.playedIndicator, .innerCardFooter {
+  background: rgba(0,0,0,0.8);
+  box-shadow: none;
+}
+
+.mediaSourceIndicator {
+  background: rgba(var(--accent),0.8);
+  box-shadow: none;
+  border-radius: var(--rounding);
+}
+/* End of Indicators */
